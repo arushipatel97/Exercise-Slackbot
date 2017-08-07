@@ -1,0 +1,1 @@
+Exercise-bot is a slackbot that periodically (depending on the range chosen) reminds select members or entire channel to go exercise (within work hours -> weekdays(8am-6pm)). It makes sure not to repeat messages two posts in a row.

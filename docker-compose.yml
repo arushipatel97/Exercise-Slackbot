@@ -1,0 +1,13 @@
+version: '2.0'
+
+services:
+  exercise-slackbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:
+    environment:
+      SLACK_TOKEN:
+      OAUTH_ACCESS:
+      CHANNEL: 

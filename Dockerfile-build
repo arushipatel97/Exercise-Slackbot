@@ -1,0 +1,10 @@
+FROM alpine:3.4
+
+RUN apk add --update ca-certificates && rm -rf /var/cache/apk/*
+
+COPY exercise-slackbot /exercise-slackbot
+ENV SLACK_TOKEN=""
+ENV OAUTH_ACCESS=""
+ENV CHANNEL=""
+
+CMD /exercise-slackbot exercise-slackbot

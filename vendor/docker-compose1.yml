@@ -1,0 +1,13 @@
+version: '2.0'
+
+services:
+  exercise-slackbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/go/src/github.com/rapidloop/exercise-slackbot
+    environment:
+      SLACK_TOKEN: xoxb-201612875510-sTqxIyTlqeWFL7ukM79ztnrk
+      OAUTH_ACCESS: xoxp-200849196423-200849196791-200078808545-7b38b18a4d7adb82823e5f7f009f52bb
+      CHANNEL: C5VTQMRHR
