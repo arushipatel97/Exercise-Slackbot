@@ -6,8 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/go/src/github.com/rapidloop/exercise-slackbot
+      - .:/
     environment:
       SLACK_TOKEN:
       OAUTH_ACCESS:
-      CHANNEL: 
+      CHANNEL:
